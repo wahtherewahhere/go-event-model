@@ -29,15 +29,15 @@ Instance ownes its own system!
 
 ### On(name string, f eventModel.Event_mange_function)
 Binding an event
-
+```go
     eventEmitterInstance.On("hello", handler1)
     eventEmitterInstance.On("world", handler2)
     eventEmitterInstance.On("thank", handler3)
     // bla bla....
-    
+```
 ### Trigger(name string)
 Signal event by name  
-
+```go
     eventEmitterInstance.Trigger("hello", nil, nil)
     eventEmitterInstance.Trigger("world", from, nil)
     eventEmitterInstance.Trigger("world", from, nil)
@@ -45,7 +45,7 @@ Signal event by name
     eventEmitterInstance.Trigger("thank", nil, gift)
     eventEmitterInstance.Trigger("thank", gift_array, gift_array2)
     // bla bla....
-
+```
 ## Callback Format
 
 `func handler_name (from interface{}, data interface{}) (err error) {}`
