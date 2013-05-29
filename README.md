@@ -100,4 +100,9 @@ Have Fun!
         fmt.Println("thanks you for download my package!");
     }
     
-    
+
+## License
+
+(The MIT License)
+
+Copyright (c) 2012
