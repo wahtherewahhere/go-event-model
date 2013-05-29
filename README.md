@@ -44,6 +44,7 @@ or use alias
         
         // binding event called 'hello' with function called 'helloHandler'
         eventEmitterInstance.On("hello", helloHandler1);
+        
         // same event can be binded many function with.
         eventEmitterInstance.On("hello", helloHandler2);
         
