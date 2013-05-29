@@ -25,8 +25,9 @@ if your server need, give it an Emitter.
 if your engine need, give it an Emitter.  
 All is independent to each others.  
 Instance ownes its own system!  
-`eventEmitterInstance := eventModel.GetEventEmitter();`
-
+```go
+eventEmitterInstance := eventModel.GetEventEmitter();
+```
 ### On(name string, f eventModel.Event_mange_function)
 Binding an event
 ```go
@@ -47,9 +48,9 @@ Signal event by name
     // bla bla....
 ```
 ## Callback Format
-
-`func handler_name (from interface{}, data interface{}) (err error) {}`
-
+```go
+func handler_name (from interface{}, data interface{}) (err error) {}
+```
 have to 2 parameter to let you do everything!
 
 In default design, 
