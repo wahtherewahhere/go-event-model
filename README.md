@@ -47,9 +47,9 @@ have to 2 parameter to let you do everything!
 
 In default design, 
 
-[*] <b>first parameter</b>: let you put the information about who trigge, and
+* <b>first parameter</b>: let you put the information about who trigge, and
 
-[*] <b>secondary parameter</b>:  is for storing data from event.
+* <b>secondary parameter</b>:  is for storing data from event.
 
 But, in fact, you can put anything you want.
 
