@@ -45,9 +45,11 @@ Signal event by name
 
 have to 2 parameter to let you do everything!
 
-In default design, first parameter let you put the information about who trigge, 
+In default design, 
 
-and second is data from event.
+*first parameter*: let you put the information about who trigge, and
+
+*secondary parameter*:  is for storing data from event.
 
 But, in fact, you can put anything you want.
 
@@ -57,7 +59,6 @@ Let's all!
 
 Have Fun!
 
-Hase
 
 ## Example
 
