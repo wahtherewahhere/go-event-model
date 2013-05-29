@@ -17,7 +17,14 @@ or use alias
 ## Usage
 
 ### GetEventEmitter() (*eventModel.EventEmitter)
+* `Return` pointer of eventModel.EventEmitter
+ 
 get an instnace to control and manager event  
+you can have more than one instance whatever you want  
+if your server need, give it an Emitter.  
+if your engine need, give it an Emitter.  
+All is independent to each others.  
+Instance ownes its own system!  
 `eventEmitterInstance := eventModel.GetEventEmitter();`
 
 ### On(name string, f eventModel.Event_mange_function)
