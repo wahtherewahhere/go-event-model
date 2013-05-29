@@ -1,4 +1,4 @@
 go-event-model
 ================
 
-event-emitter, written by go-lang
+event-model, written by go-lang
