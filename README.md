@@ -69,6 +69,7 @@ Have Fun!
 
 ## Example
 
+```go
     package main
     
     import (
@@ -106,7 +107,7 @@ Have Fun!
         
         fmt.Println("thanks you for download my package!");
     }
-    
+```
 
 ## License
 
