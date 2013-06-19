@@ -10,9 +10,9 @@ work fine with Go 1.1
 
 ## Import
 
-`import "github.com/wahtherewahhere/go-event-model" `  
+`import "github.com/wahtherewahhere/go-event-model/eventModel" `  
 or use alias  
-`import em "github.com/wahtherewahhere/go-event-model"`  
+`import em "github.com/wahtherewahhere/go-event-model/eventModel"`  
 
 ## Usage
 
