@@ -25,6 +25,7 @@ package eventModel
 import (
 	"log"
 	"runtime"
+	"reflect"
 )
 
 type Event_mange_function func ( interface{}, interface{}) (err error)
