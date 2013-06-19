@@ -25,6 +25,7 @@ package eventModel
 import (
 	//"reflect"
 	"log"
+	cmf "commonFunction"
 )
 
 type Event_mange_function func ( interface{}, interface{}) (err error)
@@ -63,6 +64,10 @@ func (instance *EventEmitter) On (name string, f Event_mange_function) {
 
 // Event - trigger the event 
 func (instance *EventEmitter) Trigger (name string, from interface{}, data interface{}) {
+	// catch error
+	defer func() {
+		if e := recover(); e != nil {}
+	}()
 	// Console info.
 	if instance.showTriggerInfo {
 		// show it!
@@ -78,10 +83,14 @@ func (instance *EventEmitter) Trigger (name string, from interface{}, data inter
 	// it is
 	for index, _ := range instance.eventList[name] {
 		///
+		if instance.showTriggerInfo {
+			log.Println("[ Event Model ] Send Signal to ", cmf.GetFunctionName(instance.eventList[name][index]) );
+		}
 		err := instance.eventList[name][index]( from, data ); 
 		if err != nil {
 			log.Println("[error] something wrong.... Event-->", name, "|", err.Error() );
 		}
 	}
 	
+}
 }
