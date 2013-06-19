@@ -6,13 +6,13 @@ work fine with Go 1.1
 
 ## Install
 
-`go get github.com/wahtherewahhere/go-event-model/eventModel`
+`go get github.com/wahtherewahhere/go-event-model`
 
 ## Import
 
-`import "github.com/wahtherewahhere/go-event-model/eventModel" `  
+`import "github.com/wahtherewahhere/go-event-model" `  
 or use alias  
-`import em "github.com/wahtherewahhere/go-event-model/eventModel"`  
+`import em "github.com/wahtherewahhere/go-event-model"`  
 
 ## Usage
 
@@ -75,7 +75,7 @@ Have Fun!
     
     import (
         "fmt"
-        "github.com/wahtherewahhere/go-event-model/eventModel"
+        "github.com/wahtherewahhere/go-event-model"
     )
     
     func helloHandler1 (from interface{}, data interface{}) (err error) {
