@@ -23,9 +23,8 @@
 package eventModel
 
 import (
-	//"reflect"
 	"log"
-	cmf "commonFunction"
+	"runtime"
 )
 
 type Event_mange_function func ( interface{}, interface{}) (err error)
@@ -84,13 +83,15 @@ func (instance *EventEmitter) Trigger (name string, from interface{}, data inter
 	for index, _ := range instance.eventList[name] {
 		///
 		if instance.showTriggerInfo {
-			log.Println("[ Event Model ] Send Signal to ", cmf.GetFunctionName(instance.eventList[name][index]) );
+			log.Println("[ Event Model ] Send Signal to ", getFunctionName(instance.eventList[name][index]) );
 		}
 		err := instance.eventList[name][index]( from, data ); 
 		if err != nil {
 			log.Println("[error] something wrong.... Event-->", name, "|", err.Error() );
 		}
 	}
-	
 }
+
+func getFunctionName(i interface{}) string {
+    return runtime.FuncForPC(reflect.ValueOf(i).Pointer()).Name()
 }
