@@ -92,3 +92,8 @@ func (instance *EventEmitter) Trigger (name string, from interface{}, data inter
 		}
 	}
 }
+
+// private
+func getFunctionName(i interface{}) string {
+    return runtime.FuncForPC(reflect.ValueOf(i).Pointer()).Name()
+}
